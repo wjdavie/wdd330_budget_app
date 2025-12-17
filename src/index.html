@@ -4,68 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Budget & Investment Tracker | Home</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <script src="../js/main.js" type="module"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/main.js" type="module"></script>
   </head>
 
   <body>
     <header class="divider" id="main-header"></header>
     <main class="divider">
-      <div class="hero">
+      <section class="hero">
         <img
-          src="/src/public/images/dashboard_hero.jpeg"
+          src="./public/images/dashboard_hero.jpeg"
           alt="image of a hundred dollar bill and a stock graph"
         />
-        <div class="logo logo--square">
-          <img src="/images/noun_Tent_2517.svg" alt="tent image for logo" />
-          <div>Sleep<span class="highlight">Outside</span></div>
+        <div class="hero-text">
+            <h1>Take control of your finances!</h1>
+            <p>Track spending, keep a budget, and monitor your investments.</p>
         </div>
-      </div>
-      <section class="mission">
-        <p>We spend too much time these days indoors...sitting usually.</p>
-        <p>No wonder we are a mess!</p>
+    </section>
+      <section class="introduction">
         <p>
-          What we really need is to get outside...in fact SLEEP outside. Our
-          mission is to provide you with everything you need to do this
-          comfortably at an affordable price.
+          Managing your money doesn't have to be complicated. This app helps you understand where your money goes, and helps you plan for the future.
         </p>
       </section>
-      <section class="products">
-        <ul class="product-grid">
+      <section class="dashboard-links">
+        <ul class="dashboard-grid">
           <li>
-            <a href="product-list/index.html?category=tents"
+            <a href="./budget/"
               ><img
-                src="images/category-icons/noun_Tent_3544767.svg"
-                alt="Tent Icon from Noun Project: Mustofa Bayu"
+                src="./public/images/budget.jpg"
+                alt="Hand holding a calculator over financial documents"
               />
-              <h2>Tents</h2>
+              <h2>Budget</h2>
             </a>
           </li>
           <li>
-            <a href="product-list/index.html?category=backpacks"
+            <a href="./accounts/"
               ><img
-                src="images/category-icons/noun_carrier bag_3544771.svg"
-                alt="Backpack Icon from Noun Project: Mustofa Bayu"
+                src="./public/images/accounts.jpg"
+                alt="Computer with a spreadsheet"
               />
-              <h2>Backpacks</h2>
+              <h2>Accounts</h2>
             </a>
           </li>
           <li>
-            <a href="product-list/index.html?category=sleeping-bags"
+            <a href="./transactions/"
               ><img
-                src="images/category-icons/noun_Sleeping Bag_3544775.svg"
-                alt="Sleeping Bag Icon from Noun Project: Mustofa Bayu"
+                src="./public/images/transactions.jpg"
+                alt="Gold coins moving from one slot to another in an arc pattern"
               />
-              <h2>Sleeping Bags</h2>
+              <h2>Transactions</h2>
             </a>
           </li>
           <li>
-            <a href="product-list/index.html?category=hammocks"
+            <a href="./investments/"
               ><img
-                src="images/category-icons/noun_Hammock_791143.svg"
-                alt="Hammock Icon from Noun Project: Paul Richard"
+                src="./public/images/investments.jpg"
+                alt="Line graph with ups and downs"
               />
-              <h2>Hammocks</h2>
+              <h2>Investments</h2>
             </a>
           </li>
         </ul>
