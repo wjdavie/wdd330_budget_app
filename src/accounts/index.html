@@ -65,6 +65,9 @@
     </main>
     <footer id="main-footer"></footer>
     <script src="../js/main.js" type="module"></script>
-    <script src="../js/accounts.js" type="module"></script>
+    <script type="module">
+        import accountProcess from "../js/accounts.js";
+        accountProcess.init();
+    </script>
   </body>
 </html>

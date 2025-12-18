@@ -65,7 +65,10 @@
     </main>
     <footer id="main-footer"></footer>
     <script src="../js/main.js" type="module"></script>
-    <script src="../js/investments.js" type="module"></script>
+    <script type="module">
+        import investmentsProcess from "../js/investments.js"
+        investmentsProcess.init();
+    </script>
     <script src="https://cdn.jsdeliver.net/npm/chart.js"></script>
   </body>
 </html>
