@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transaction Management | Transactions</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <header class="divider" id="main-header"></header>
+    <main class="divider">
+        <h1>Account Transactions</h1>
+
+        <p class="page-description">
+            Record and review all your financial transactions in one place.
+        </p>
+
+        <div class="add-transaction-container">
+            <button class="btn-add-transaction">+ Add Transaction</button>
+        </div>
+
+        <section class="transactions-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Account Name</th>
+                        <th>Transaction Type</th>
+                        <th>Transaction Date</th>
+                        <th>Transaction Amount</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Big Time Bank</td>
+                        <td>Deposit</td>
+                        <td>12/14/2025</td>
+                        <td>$500.00</td>
+                        <td>
+                            <button class="btn-edit">Edit</button>
+                        </td>
+                        <td>
+                            <button class="btn-delete">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Amex</td>
+                        <td>Debit</td>
+                        <td>12/16/2025</td>
+                        <td>$100.00</td>
+                        <td>
+                            <button class="btn-edit">Edit</button>
+                        </td>
+                        <td>
+                            <button class="btn-delete">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer id="main-footer"></footer>
+    <script src="../js/main.js" type="module"></script>
+    <script src="../js/transactions.js" type="module"></script>
+  </body>
+</html>

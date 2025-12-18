@@ -40,6 +40,26 @@ header {
   border-bottom: 1px solid var(--light-grey);
 }
 
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: white;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+/* Logo */
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--dark-grey);
+  font-family: var(--font-headline);
+  font-size: 1.5rem;
+}
+
 #main-footer {
   text-align: center;
   padding: 1rem;
@@ -87,6 +107,9 @@ header {
   margin-bottom: 2.5rem;
   font-size: var(--font-base);
   max-width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .dashboard-grid {
@@ -122,6 +145,7 @@ header {
   margin-bottom: 0.5rem;
   font-family: var(--font-headline);
   font-size: var(--large-font);
+  text-align: center;
 }
 
 .dashboard-grid p {
@@ -129,6 +153,171 @@ header {
   color: var(--secondary-color);
   font-size: var(--font-base);
 }
+
+.logo {
+  line-height: 60px;
+  width: 245px;
+  display: flex;
+  align-items: center;
+  font-family: var(--font-headline);
+  font-size: 30px;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+}
+
+footer {
+  font-size: var(--small-font);
+  padding: 1em;
+}
+
+main.divider {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.page-desctiption {
+  max-width: 800px;
+  margin-bottom: 2rem;
+  font-size: var(--large-font);
+}
+
+.accounts-table, .transactions-table, .investments-table, .budget-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 1px 1px 6px var(--light-grey);
+}
+
+.accounts-table th, .transactions-table th, .investments-table th, .budget-table th{
+  text-align: left;
+  padding: 12px;
+  background-color: var(--tertiary-color);
+  color: var(--dark-grey);
+  font-family: var(--font-headline);
+  font-size: var(--large-font);
+  border-bottom: 2px solid var(--light-grey);
+}
+
+.accounts-table td, .transactions-table td, .investments-table td, .budget-table td {
+  padding: 12px;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.accounts-table tbody tr:nth-child(even), .transactions-table tbody tr:nth-child(even), .investments-table tbody tr:nth-child(even), .budget-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.accounts-table tbody tr:hover, .transactions-table tboyd tr:hover, .investments-table tr:hover, .budget-table tr:hover {
+  background-color: #eef3f6;
+}
+
+.add-account-container, .add-transactions-container, .add-investment-container, .add-budget-container {
+  margin-bottom: 1rem;
+  text-align: right;
+}
+
+.btn-add-account, .btn-add-transaction, .btn-add-investment, .btn-add-budget {
+  background-color: var(--primary-color);
+  color: white;
+  font-family: var(--font-base);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-add-account:hover, .btn-add-transaction:hover, .btn-add-investment:hover, .btn-add-budget:hover {
+  background-color: var(--secondary-color);
+}
+
+.accounts-table .btn-edit, .accounts-table .btn-delete, .transactions-table .btn-edit, .transactions-table .btn-delete, .investments-table .btn-edit,
+.investments-table .btn-delete, .budget-table .btn-edit, .budget-table .btn-delete {
+  font-family: var(--font-body);
+  font-size: var(--small-font);
+  padding: 0.25rem 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, 0.2s ease;
+}
+
+.accounts-table .btn-edit, .accounts-table .btn-delete, .transactions-table .btn-edit, .transactions-table .btn-delete {
+  background-color: #f0a868;
+  color: white;
+}
+
+.accounts-table .btn-edit:hover, .accounts-table .btn-delete:hover, .transactions-table .btn-edit:hover, .transactions-table .btn-delete:hover {
+  background-color: var(--secondary-color);
+}
+
+.budget-table tfoot tr {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.budget-table tfoot td {
+  border-top: 2px solid var(--light-grey)
+}
+
+.budget-section {
+  margin-bottom: 3rem;
+}
+
+.budget-section h2 {
+  margin-bottom: 0.5rem;
+  font-family: var(--font-headline);
+  color: var(--secondary-color);
+}
+
+.investments-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 1px 1px 6px var(--light-grey);
+  margin-bottom: 1rem;
+}
+
+.investments-table th,
+.investments-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.investments-table td:nth-child(3),
+.investments-table td:nth-child(4),
+.investments-table th:nth-child(3),
+.investments-table th:nth-child(4) {
+  text-align: right;
+}
+
+.add-investment-container {
+  margin-bottom: 1rem;
+  text-align: right;
+}
+
+.btn-add-investment {
+  background-color: var(--primary-color);
+  color: white;
+  font-family: var(--font-headline);
+  font-size: var(--font-base);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-add-investment:hover {
+  background-color: var(--secondary-color);
+}
+
+
 
 /* =========================
    Media section

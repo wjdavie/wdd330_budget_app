@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Management | Account</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <header class="divider" id="main-header"></header>
+    <main class="divider">
+        <h1>Account Management</h1>
+
+        <p class="page-description">
+            View your financial accounts in one place.
+        </p>
+
+        <div class="add-account-container">
+            <button class="btn-add-account">+ Add Account</button>
+        </div>
+
+        <section class="accounts-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Account Name</th>
+                        <th>Account Type</th>
+                        <th>Account Balance</th>
+                        <th>Interest Rate</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Big Time Bank</td>
+                        <td>Savings Account</td>
+                        <td>$10,000,00</td>
+                        <td>0.01%</td>
+                        <td>
+                            <button class="btn-edit">Edit</button>
+                        </td>
+                        <td>
+                            <button class="btn-delete">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Amex</td>
+                        <td>Credit Card</td>
+                        <td>$1,000,00</td>
+                        <td>18.00%</td>
+                        <td>
+                            <button class="btn-edit">Edit</button>
+                        </td>
+                        <td>
+                            <button class="btn-delete">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer id="main-footer"></footer>
+    <script src="../js/main.js" type="module"></script>
+    <script src="../js/accounts.js" type="module"></script>
+  </body>
+</html>

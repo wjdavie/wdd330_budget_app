@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investments | Investment Tracker</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <header class="divider" id="main-header"></header>
+    <main class="divider">
+        <h1>Investment Tracking</h1>
+
+        <p class="page-description">
+            Track your investment portfolio here.
+        </p>
+
+                <div class="add-investment-container">
+            <button class="btn-add-investment">+ Add Investment</button>
+        </div>
+
+        <section class="investments-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Investment Name</th>
+                        <th>Investment Type</th>
+                        <th>Current Price</th>
+                        <th>Change 24h</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Bitcoin</td>
+                        <td>Crypto Currency</td>
+                        <td>$15,000.00</td>
+                        <td>+2.5%</td>
+                        <td>
+                            <button class="btn-edit">Edit</button>
+                        </td>
+                        <td>
+                            <button class="btn-delete">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Apple Inc.</td>
+                        <td>Stock</td>
+                        <td>$200.00</td>
+                        <td>-0.8%</td>
+                        <td>
+                            <button class="btn-edit">Edit</button>
+                        </td>
+                        <td>
+                            <button class="btn-delete">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer id="main-footer"></footer>
+    <script src="../js/main.js" type="module"></script>
+    <script src="../js/investments.js" type="module"></script>
+    <script src="https://cdn.jsdeliver.net/npm/chart.js"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget | Budget Tracker</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <header class="divider" id="main-header"></header>
+    <main class="divider">
+        <h1>Budget Tracker</h1>
+
+        <p class="page-description">
+            Plan and update your monthly budget to stay on top of your finances.
+        </p>
+
+        <section class="budget-section">
+            <h2>Income</h2>
+
+            <div class="add-budget-container">
+                <button class="btn-add-budget">+ Add Income</button>
+            </div>
+
+            <table class="budget-table">
+                <thead>
+                    <tr>
+                        <th>Income Source</th>
+                        <th>Amount</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ABC Employer</td>
+                        <td>$5,000.00</td>
+                        <td><button class="btn-edit">Edit</button></td>
+                        <td><button class="btn-delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>XYZ Consulting</td>
+                        <td>$500.00</td>
+                        <td><button class="btn-edit">Edit</button></td>
+                        <td><button class="btn-delete">Delete</button></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td><strong>Total Income:</strong></td>
+                        <td><strong>$5,500.00</strong></td>
+                        <td colspan="2"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section class="budget-section">
+            <h2>Expenses</h2>
+
+            <div class="add-budget-container">
+                <button class="btn-add-budget">+ Add Income</button>
+            </div>
+
+            <table class="budget-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Budget Amount</th>
+                        <th>Amount Spent</th>
+                        <th>Balance</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rent</td>
+                        <td>$2,000.00</td>
+                        <td>$2,000.00</td>
+                        <td>$0.00</td>
+                        <td><button class="btn-edit">Edit</button></td>
+                        <td><button class="btn-delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Groceries</td>
+                        <td>$1,000.00</td>
+                        <td>$800.00</td>
+                        <td>$200.00</td>
+                        <td><button class="btn-edit">Edit</button></td>
+                        <td><button class="btn-delete">Delete</button></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td><strong>Total Expenses:</strong></td>
+                        <td><strong>$2,800.00</strong></td>
+                        <td colspan="2"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+    <footer id="main-footer"></footer>
+    <script src="../js/main.js" type="module"></script>
+    <script src="../js/budget.js" type="module"></script>
+  </body>
+</html>
